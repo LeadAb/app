@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "hello my friend"'
+                sh '''
+                echo "hello my friend"
+                ls -a
+                pwd
+                '''
             }
         }
     }
